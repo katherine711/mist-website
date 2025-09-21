@@ -1,0 +1,105 @@
+/* General reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+/* Navbar */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ff7426;
+  padding: 10px 30px;
+}
+
+header .logo img {
+  height: 50px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+  padding: 10px 20px;
+  border-radius: 25px;
+}
+
+nav a.active {
+  background: white;
+  color: black;
+}
+
+nav a:hover {
+  background: white;
+  color: black;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+  gap: 40px;
+}
+
+.card {
+  width: 300px;
+}
+
+.image-box {
+  background: #ff7426;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  color: black;
+  font-weight: bold;
+}
+
+/* Toggle button + text */
+.toggle-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin: 50px 0;
+}
+
+/* Triangle button */
+.triangle-btn {
+  width: 0;
+  height: 0;
+  border-left: 80px solid #ff7426;
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+  background: none;
+  color: black;
+  font-weight: bold;
+  position: relative;
+  cursor: pointer;
+}
+
+.triangle-btn::after {
+  content: "click me";
+  position: absolute;
+  left: -65px;
+  top: -12px;
+  font-size: 14px;
+  color: black;
+}
+
+#toggleText {
+  font-size: 18px;
+}
+
+.hidden {
+  display: none;
+}
+
+
